@@ -7,7 +7,8 @@ export default {
 		singer:{
 			name:"Kafe.Hu",
 			synopsis:"中国新说唱2020 第十期"
-		}
+		},
+		musicImg:'/static/music/music1.jpg'
 	},
 	{
 		id:20002,
@@ -16,7 +17,8 @@ export default {
 		singer:{
 			name:"h3R3",
 			synopsis:"他只是经过"
-		}
+		},
+		musicImg:'/static/music/music2.jpg'
 	},
 	{
 		id:20003,
@@ -25,7 +27,8 @@ export default {
 		singer:{
 			name:"河北吴孟达",
 			synopsis:"我像一个傻瓜2020"
-		}
+		},
+		musicImg:'/static/music/music3.jpg'
 	},
 	{
 		id:20004,
@@ -34,7 +37,8 @@ export default {
 		singer:{
 			name:"张芸京",
 			synopsis:"偏爱2020"
-		}
+		},
+		musicImg:'/static/music/music4.jpg'
 	},
 	{
 		id:20005,
@@ -43,7 +47,8 @@ export default {
 		singer:{
 			name:"房东的猫",
 			synopsis:"所念皆星河"
-		}
+		},
+		musicImg:'/static/music/music5.jpg'
 	},
 	{
 		id:20006,
@@ -52,7 +57,8 @@ export default {
 		singer:{
 			name:"程佳佳",
 			synopsis:"山楂树之恋"
-		}
+		},
+		musicImg:'/static/music/music6.jpg'
 	},
 	]
 }

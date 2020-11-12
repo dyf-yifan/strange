@@ -1,5 +1,5 @@
 <template>
-	<view class="fixed-bottom rounded mx-2 mb-1" style="height: 160rpx; background-color: #d1ccc0; opacity: .9;" @tap="toDetailPage">
+	<view class="fixed-bottom rounded mx-2 mb-1" style="height: 160rpx; background-color: #d1ccc0; opacity: 0.9;" @tap="toDetailPage">
 		<!-- 进度部分 -->
 		<view class="flex align-center justify-center font" style="color: #7a8388; height: 65rpx;" @tap.stop>
 			<!-- 总时长 -->
