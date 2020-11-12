@@ -7,7 +7,7 @@
 			}
 		}
 	    ,{
-            "path" : "components/myaudio/myaudio",
+            "path" : "components/myaudio",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -16,7 +16,7 @@
             
         }
         ,{
-            "path" : "components/myIcon/myIcon",
+            "path" : "components/myIcon",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

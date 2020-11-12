@@ -1,6 +1,6 @@
 <template>
 	<!-- 根据nightStatu的值切换白天和黑夜模式 -->
-	<view>
+	<view style="height: 100vh;" :class="nightStatus ? 'nigthTheme' : ''">
 		<!-- 歌曲信息 -->
 		<view class="d-inline-block w-100 text-center py-4">
 			<view>
@@ -45,8 +45,8 @@
 					<my-icon iconId="icon-aixinfengxian" iconSize="60"></my-icon>
 					<text class="pt-1">收藏</text>
 				</view>
-				<view class="flex flex-column align-center">
-					<my-icon iconId="icon-yejianmoshi" iconSize="60"></my-icon>
+				<view class="flex flex-column align-center" @tap="changeStatus('nightStatus')">
+					<my-icon :iconId="!nightStatus?'icon-yejianmoshi':'icon-yueliang'" iconSize="60"></my-icon>
 					<text class="pt-1">夜间模式</text>
 				</view>
 			</view>
@@ -70,11 +70,11 @@
 
 			<view>
 				<view class="font-md pt-2">歌手简介：</view>
-				<view class="text-ellipsis w-100">{{ ingerSynopsis }}</view>
+				<view class="text-ellipsis w-100">{{ singerSynopsis }}</view>
 			</view>
 		</view>
 
-		<!-- 播放列表部分 -->
+<!-- 		播放列表部分
 		<view class="fixed-bottom shadow p-2" style="height: 400rpx;border-radius: 30rpx;">
 			<view class="font-weight-bold font-md" style="height: 50rpx;">列表选择</view>
 			<scroll-view scroll-y="true" style="height: 350rpx;">
@@ -89,7 +89,7 @@
 					</view>
 				</block>
 			</scroll-view>
-		</view>
+		</view> -->
 	</view>
 </template>
 <script>
@@ -98,6 +98,8 @@ import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 export default {
 	data() {
 		return {
+			listStatus: false,
+			collectStatus: false,
 			nightStatus: false
 		};
 	},
@@ -115,7 +117,11 @@ export default {
 		...mapGetters(['audioName', 'singerName', 'singerSynopsis'])
 	},
 	methods: {
-		...mapActions(['sliderToPlay'])
+		...mapActions(['sliderToPlay']),
+		// 改变状态
+		changeStatus(statusType){
+			this[statusType] = !this[statusType]
+		}
 	}
 };
 </script>
