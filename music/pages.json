@@ -3,11 +3,12 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页",
+				"backgroundColor":"#d1ccc0"
 			}
 		}
 	    ,{
-            "path" : "components/myaudio",
+            "path" : "pages/sort/sort",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -16,7 +17,16 @@
             
         }
         ,{
-            "path" : "components/myIcon",
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/like/like",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -39,5 +49,32 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "rgb(224, 99, 89)",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+			"iconPath": "./static/tabbar/shouye.png",
+			"selectedIconPath": "./static/tabbar/shouyeed.png",
+			"pagePath": "pages/index/index",
+			"text": "首页"
+		}, {
+			"iconPath": "./static/tabbar/fenlei.png",
+			"selectedIconPath": "./static/tabbar/fenleied.png",
+			"pagePath": "pages/sort/sort",
+			"text": "分类"
+		}, {
+			"iconPath": "./static/tabbar/like.png",
+			"selectedIconPath": "./static/tabbar/liked.png",
+			"pagePath": "pages/like/like",
+			"text": "收藏"
+		}, {
+			"iconPath": "./static/tabbar/wode.png",
+			"selectedIconPath": "./static/tabbar/wodeed.png",
+			"pagePath": "pages/my/my",
+			"text": "我的"
+		}]
 	}
 }
